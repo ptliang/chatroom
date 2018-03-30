@@ -1,0 +1,3 @@
+<ul class="room-list list-unstyled">
+  <li class="room" ng-click="$ctrl.changeRoom(room.id)" ng-class="{active : $ctrl.currentRoom == room.id}" ng-repeat="room in $ctrl.roomList"><a href="#/chatroom/{{room.id}}">{{ room.name }}</a></li>
+</ul>

@@ -1,0 +1,31 @@
+<div id="ChatroomCtrl">
+  <aside>
+    <div class="user-info">
+      <h2 class="user-name">{{ chatroom.user.username }}</h2>
+      <p class="elapsed-time">Online for {{ chatroom.user.elapsedTime }}</p>
+    </div>
+    <chatroom-list></chatroom-list>
+  </aside>
+  <section>
+    <div class="header" ng-if="chatroom.roomDetail">
+      <h2 class="room-name" >{{ chatroom.roomDetail.name }}</h2>
+      <div class="room-users">
+        <span class="own-user">{{ chatroom.user.username }}</span>, {{ chatroom.roomDetail.users.join(', ')}}
+      </div>
+    </div>
+    <div class="chat-window">
+      <div ng-class="message.name == chatroom.user.username ? 'o-message' : 'i-message'" ng-repeat="message in chatroom.messages">
+        <div class="text">{{ message.message }}</div>
+        <div class="author" ng-if="message.name != chatroom.user.username">{{ message.name }}</div>
+      </div>
+    </div>
+    <div class="user-action" ng-if="chatroom.roomDetail">
+      <form ng-submit="chatroom.sendMessage()">
+        <div class="form-group">
+          <input type="text" class="form-control" ng-model="chatroom.newMessage" placeholder="Type a message..."/>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>

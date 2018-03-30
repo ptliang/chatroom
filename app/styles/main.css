@@ -1,0 +1,164 @@
+.container {
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+login-form {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%);
+}
+
+login-form .form-control {
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+login-form .btn {
+  background-color: #FF3008;
+  color: #fff;
+}
+
+#ChatroomCtrl {
+  display: flex;
+  height: 800px;
+}
+
+#ChatroomCtrl > aside {
+  width: 320px;
+  background-color: #FF3008;
+  font-size: 18px;
+  color: #FFF;
+}
+
+#ChatroomCtrl .user-info {
+  padding: 10px 20px;
+}
+
+#ChatroomCtrl .user-info h2 {
+  margin-top: 0;
+}
+
+#ChatroomCtrl .elapsed-time {
+  font-size: 12px;
+}
+
+#ChatroomCtrl > section {
+  width: 100%;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+#ChatroomCtrl .user-info {
+  height: 100px;
+}
+
+#ChatroomCtrl > section div.header {
+  text-align: center;
+  padding: 10px;
+  flex: 0 0 auto;
+}
+
+#ChatroomCtrl .header .room-name {
+  margin-top: 0;
+}
+
+#ChatroomCtrl .header {
+  height: 100px;
+  background-color: #FFF;
+}
+
+#ChatroomCtrl chatroom-list {
+  display: block;
+}
+
+#ChatroomCtrl chatroom-list ul {
+  background-color: #FF3008;
+}
+
+#ChatroomCtrl chatroom-list .room {
+  padding: 8px 20px;
+}
+
+#ChatroomCtrl chatroom-list .room a {
+  color: #FFF;
+}
+
+#ChatroomCtrl chatroom-list .room a:hover {
+  text-decoration: none;
+}
+
+#ChatroomCtrl chatroom-list .room.active {
+  background-color: DarkRed;
+}
+
+#ChatroomCtrl .chat-window {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: scroll;
+  min-height: 600px;
+}
+
+#ChatroomCtrl .i-message, .o-message {
+  margin-bottom: 16px;
+}
+
+#ChatroomCtrl .o-message {
+  align-self: flex-end;
+}
+
+#ChatroomCtrl .chat-window .text {
+  background: #FFF;
+  padding: 12px 18px;
+  border-radius: 20px;
+  max-width: 450px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+#ChatroomCtrl .o-message .text {
+  background-color: #FF3008;
+  color: #FFF;
+}
+
+#ChatroomCtrl .chat-window .author {
+  color: #777;
+}
+
+#ChatroomCtrl .user-action {
+  height: 100px;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+#ChatroomCtrl .user-action form {
+  width: 100%;
+  padding: 0 20px;
+}
+
+#ChatroomCtrl .user-action .form-group {
+  display: flex;
+}
+
+#ChatroomCtrl .user-action input {
+  flex: 1 1 0;
+  margin-right: 20px;
+}
+
+#ChatroomCtrl .user-action button {
+  flex: none;
+}
+
+#ChatroomCtrl .own-user {
+  color: #FF3008;
+}
