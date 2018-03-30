@@ -13,7 +13,7 @@
         <span class="own-user">{{ chatroom.user.username }}</span>, {{ chatroom.roomDetail.users.join(', ')}}
       </div>
     </div>
-    <div class="chat-window">
+    <div class="chat-window" scroll-to-bottom="chatroom.messages">
       <div ng-class="message.name == chatroom.user.username ? 'o-message' : 'i-message'" ng-repeat="message in chatroom.messages">
         <div class="text">{{ message.message }}</div>
         <div class="author" ng-if="message.name != chatroom.user.username">{{ message.name }}</div>
