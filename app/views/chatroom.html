@@ -15,7 +15,7 @@
     </div>
     <div class="chat-window" scroll-to-bottom="chatroom.messages">
       <div ng-class="message.name == chatroom.user.username ? 'o-message' : 'i-message'" ng-repeat="message in chatroom.messages">
-        <div class="text">{{ message.message }}</div>
+        <div class="text"><p>{{ message.message }}</p><emoji reaction="message.reaction" id="message.id"></emoji></div>
         <div class="author" ng-if="message.name != chatroom.user.username">{{ message.name }}</div>
       </div>
     </div>

@@ -45,6 +45,10 @@ angular.module('doordashApp')
         };
 
         return $http.post('http://localhost:8080/api/rooms/' + roomId + '/messages', data)
+      },
+
+      setEmoji: function(roomId, messageId, reactionObj) {
+        return $http.post('http://localhost:8080/api/rooms/' + roomId + '/messages/' + messageId, reactionObj);
       }
     };
   }]);

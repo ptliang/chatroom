@@ -162,3 +162,17 @@ login-form .btn {
 #ChatroomCtrl .own-user {
   color: #FF3008;
 }
+
+#ChatroomCtrl emoji {
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+.clearfix:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
